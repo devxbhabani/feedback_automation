@@ -46,23 +46,11 @@ An automated script using [Playwright](https://playwright.dev/python/) to automa
 Open `automation.py` and adjust the configuration parameters near the top of the file:
 
 ```python
-# ---------------- CONFIG ----------------
 DASHBOARD_URL = "https://adamasknowledgecity.ac.in/student/dashboard"
 
 # Credentials
 REG_NO = "YOUR_REGISTRATION_NO"
 PASSWORD = "YOUR_PASSWORD"
-
-# Operation Mode
-DRY_RUN = False            # Set to True to preview form filling without submitting
-RADIO_CHOICE = 0           # 0 = First option (e.g., Strongly Agree / Yes), 1 = Second option
-SLIDER_VALUE = "max"       # "max", "min", or an integer string like "4"
-COMMENT_TEXT = ""          # Optional comment string for textareas (leave "" to skip)
-
-# Execution Tuning
-PAUSE = 1.5                # Delay (in seconds) between navigation/form actions
-MAX_FORMS = 500            # Safety cutoff limit
-MAX_FAILS_PER_SUBJECT = 2  # Skip to the next subject after N consecutive failures
 ```
 
 > [!CAUTION]
